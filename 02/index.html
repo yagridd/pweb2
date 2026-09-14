@@ -11,7 +11,7 @@ function calcularaiz(arg){
 
  }
  function escrevediv2(texto){
-    document.getelementById("minhadiv")innerHTML=texto
+    document.getelementById("minhadiv").innerHTML=texto
 
 
 
@@ -22,24 +22,23 @@ function calcularaiz(arg){
 
 }
 
-function escrevernumeros() {
+function escrevernumeros(){
 let n = prompt("digite um numero n:");
 n=perseInt(n);
 let divResultado = document.getElementById("resultadoDesafio");
 divResultado.innerHTML= "";
 if(isNaN(n) || n < 1){
-
     divresultado.innerHTML="por favor,insira um numero valido maior ou igual a 1.";
     returno;
 }
-for(let i=1; 1<=n;i++=){
+for(let i=1; 1<=n; i++){
  divresultado.innerHTML+=i="";
 
 }
 
 
 function escreverNumerosInput(){
- Var input = document.getElementById("numerosinput");
+ var input = document.getElementById("numerosinput");
  var n = perseInt (input.value);
  if (isNaN(n) || n<=0) {
     alert("por favor,insira um numero valido maior que zero");
@@ -52,4 +51,7 @@ var div= document.getElementById("numerosinput");
 div.innerHTML="";
 for(var i =1; i <= n; i++){
     div.innerHTML+= i + "<br>";
+}
+
+
 }
