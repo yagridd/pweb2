@@ -6,6 +6,50 @@
 
 function calcularaiz(arg){
    var raiz = Math.sqrt(arg)
-   alert("a raiz quadrada de = + arg +" e " + raiz);
+   alert("a raiz quadrada de" + arg +" e " + raiz);
+
 
  }
+ function escrevediv2(texto){
+    document.getelementById("minhadiv")innerHTML=texto
+
+
+
+
+ function escrevediv2(texto){
+    texto=prompt('digite um texto qualquer');
+    document.getelementbyId("minhadiv2").innerHTML=texto;
+
+}
+
+function escrevernumeros() {
+let n = prompt("digite um numero n:");
+n=perseInt(n);
+let divResultado = document.getElementById("resultadoDesafio");
+divResultado.innerHTML= "";
+if(isNaN(n) || n < 1){
+
+    divresultado.innerHTML="por favor,insira um numero valido maior ou igual a 1.";
+    returno;
+}
+for(let i=1; 1<=n;i++=){
+ divresultado.innerHTML+=i="";
+
+}
+
+
+function escreverNumerosInput(){
+ Var input = document.getElementById("numerosinput");
+ var n = perseInt (input.value);
+ if (isNaN(n) || n<=0) {
+    alert("por favor,insira um numero valido maior que zero");
+ } 
+
+
+
+}
+var div= document.getElementById("numerosinput");
+div.innerHTML="";
+for(var i =1; i <= n; i++){
+    div.innerHTML+= i + "<br>";
+}
