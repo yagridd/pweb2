@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atividade 05 - Lista de Livros</title>
+</head>
+
+<body>
+
+    <h1>Lista de Livros</h1>
+
+    <input
+        type="text"
+        id="nome"
+        placeholder="Nome do livro"
+    >
+
+    <input
+        type="text"
+        id="autor"
+        placeholder="Autor"
+    >
+
+    <br><br>
+
+    <button onclick="adicionar()">
+        Adicionar
+    </button>
+
+    <button onclick="inserirPosicao()">
+        Inserir em uma posição
+    </button>
+
+    <button onclick="remover()">
+        Remover último
+    </button>
+
+    <button onclick="posicao()">
+        Consultar posição
+    </button>
+
+    <h2>Livros cadastrados</h2>
+
+    <ul id="lista"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
