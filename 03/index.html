@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Array de Linguagens</title>
+
+    <script>
+        let linguagens = Array();
+
+        linguagens[0] = 'Dart';
+        linguagens[1] = 'PHP';
+        linguagens[2] = 'Java';
+        linguagens[3] = 'Python';
+        linguagens[4] = 'Perl';
+        linguagens[5] = 'Ruby on Rails';
+        linguagens[6] = 'C ++';
+
+        function mostrarListaLinguagens() {
+            const container = document.getElementById('minhaDiv');
+
+            for (var i = 0; i < linguagens.length; i++) {
+
+                var tag = '<h5>' + i + ' - ' + linguagens[i] + '</h5>';
+
+                container.innerHTML += tag;
+            }
+        }
+
+        function posicaoLinguagens() {
+            var indice = prompt('Qual posição da lista deseja consultar?');
+
+            alert(linguagens[indice]);
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Array de Linguagens</h1>
+
+    <button onclick="mostrarListaLinguagens()">
+        Criar Array
+    </button>
+
+    <br><br>
+
+    <button onclick="posicaoLinguagens()">
+        Posição no Array
+    </button>
+
+    <div id="minhaDiv"></div>
+
+</body>
+</html>
