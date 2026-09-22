@@ -52,3 +52,52 @@
 
 </body>
 </html>
+
+<script>
+
+    let frutas = Array();
+
+    frutas[0] = 'maçã';
+    frutas[1] = 'banana';
+    frutas[2] = 'laranja';
+    frutas[3] = 'melancia';
+    frutas[4] = 'manga';
+
+    function mostrarListaFrutas() {
+
+        const container = document.getElementById('minhaDiv');
+
+        for (var i = 0; i < frutas.length; i++) {
+
+            var tag = '<h5>' + i + ' - ' + frutas[i] + '</h5>';
+
+            container.innerHTML += tag;
+        }
+    }
+
+    function posicaoFrutas() {
+
+        var indice = prompt('Qual posição da lista deseja consultar?');
+
+        alert(frutas[indice]);
+    }
+
+</script>
+
+<body>
+
+    <h1>Array de Frutas</h1>
+
+    <button onclick="mostrarListaFrutas()">
+        Criar Array
+    </button>
+
+    <br><br>
+
+    <button onclick="posicaoFrutas()">
+        Posição no Array
+    </button>
+
+    <div id="minhaDiv"></div>
+
+</body>
